@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.8);
+    top: 0;
+    position: sticky;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: blanchedalmond;
+}
+.navbar ul li a:hover{
+    box-shadow: black;
+    color: black;
+    background-color: #fff;
+}
+
+/* HOME */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#home::before{
+    background : url("E:/sajid/front.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 865px;
+    width: 100%;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    right: 30%;
+}
+.heading{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px;
+}
+.btn{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    font-weight: bold;
+}
+
+/* About me*/
+
+#about{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 350px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#intro p{
+    font-size: 30px;
+}
+
+/* Portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.gallery{
+
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* SKILLS*/
+
+#skills{
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+#skills h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.left{
+    width: 50%;
+}
+.left h1{
+    text-align: left;
+    font-size: 30px;
+}
+.left p{
+    font-size: 20px;
+    margin: 0px;
+    text-align: justify;
+}
+
+.left a{
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: px solid;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.left a:hover{
+    background-color: black;
+    color: red  ;
+}
+.right{
+    flex: auto;
+    margin-left: 20px;
+}
+.right .line{
+    margin-bottom: 20px;
+}
+.right .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .info span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right .bar{
+    background-color: gray;
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+.right .bar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: black;
+}
+.right .html::before{
+    width: 90%;
+}
+.right .css::before{
+    width: 80%;
+}
+.right .js::before{
+    width: 50%;
+}
+.right .angular::before{
+    width: 40%;
+}
+
+/* Education */
+
+#Education{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(45, 255, 150, 0.5)50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 20px rgba(45, 255, 150, 0.5);
+}
+
+/* contacts */
+
+#Contacts{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+}
+
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+}
+.form a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
